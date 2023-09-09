@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a2328
+}
+
+.container{
+    width: 25%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 35px;
+    background: #f0f0f0;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px #00000056;
+    z-index: 1;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.form-header{
+margin-bottom: 3rem;
+display: flex;
+justify-content: space-between;
+}
+.login-button{
+    display: flex;
+    align-items: center;
+}
+.login-button button {
+    border: none;
+    background-color: #ff3640;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #a5242b;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.form-header h1::after{
+    content: ' ';
+    display: block;
+    width: 11.3rem;
+    height: 0.3rem;
+    background-color: #ff3640;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box input{
+    margin: 0.05rem 0;
+    padding: 0.3rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #ff3640;
+}
+.input-box label{
+    font-size: 1rem;
+    font-weight:  600;
+    color: #000000c0;
+}
+
+.continue-button button{
+    width: 100%;
+    margin-top: 0.0rem;
+    border: none;
+    background-color: #ff3640; 
+    padding: 0.20rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue-button button:hover{
+    background-color: #a5242b;
+}
+.continue-button button a{
+    text-decoration: none ;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #ffff;
+}
+
+
+/* A PARTIR DAQUI É O METODO RESPONSIVO*/
+
+
+@media screen  and (max-width: 1330px) {
+    .container{
+        width: 50%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+@media screen and (max-widht: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+}
