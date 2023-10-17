@@ -6,10 +6,12 @@
     <title>Menu PetNear</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="img" href="assets/img/PetNearIcone.png.png">
-    <script src="assets/js/script.js"></script>
+
 </head>
 
 <body>
+    <script src="assets/js/script.js"></script>
+    
     <header>
         <nav class="nav-bar">
             <input type="checkbox" class="fakeclick">
@@ -19,7 +21,9 @@
             <span></span>
         </div>
         <ul>
-            <li><a href="#">Dark Mode</a></li>
+            <label for="switch">
+                <input type="checkbox" id="switch" class="hidden-checkbox">Dark Mode
+            </label>
             <li><a href="#">Configurações</a></li>
             <li><a href="#">Sair</a></li>
         </ul>
